@@ -21,5 +21,23 @@ window.addEventListener('scroll', function() {
     if (currentSection && headerColor) {
       header.style.backgroundColor = headerColor;
     }
-  });
+  }
+);
 
+    var themeButton = document.getElementById('changer-theme');
+    var body = document.body;
+
+    themeButton.addEventListener('click', function() {
+      body.classList.toggle('theme-mode');
+});
+
+  function copyEmail() {
+    var email = document.querySelector('.adresse-email h1');
+    var tempInput = document.createElement('input');
+    tempInput.setAttribute('value', email.textContent);
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+    alert('Adresse e-mail copiée : ' + email.textContent);
+}
