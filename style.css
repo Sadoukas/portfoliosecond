@@ -1,26 +1,26 @@
 header, body p {
-  font-family: roboto, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-weight: normal;
   font-size: 11px;
   line-height: 1;
 }
 
 header, body h1 {
-  font-family: papyrus, sans-serif;
+  font-family: Georgia, sans-serif;
   font-weight: bold;
   font-size: 22px;
   line-height: 1;
 }
 
 header, body h2 {
-  font-family: papyrus, sans-serif;
+  font-family: Georgia, sans-serif;
   font-weight: bold;
   font-size: 19px;
   line-height: 1;
 }
 
 header, body h3 {
-  font-family: papyrus, sans-serif;
+  font-family: Georgia, sans-serif;
   font-weight: normal;
   font-size: 17px;
   line-height: 1;
@@ -50,7 +50,7 @@ header {
 }
 
 header img {
-  margin-left: 50px;
+  margin-left: 30px;
   width: 70%;
   height: auto;
 }
@@ -229,12 +229,13 @@ body.theme-mode {
 }
 
 .partie-droite h1, h2 {
+  text-align: center;
   margin-bottom: 5%;
 }
 
 .partie-droite p {
-  margin-bottom: 10%;
-  line-height: 1.5;
+  margin-bottom: %;
+  line-height: 1.8;
 }
 
 .partie-droite .competences {
@@ -245,25 +246,32 @@ body.theme-mode {
   justify-content: center;
 }
 
+.partie-droite .competences .position-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .partie-droite .competences .espacement-logo {
   flex: 1;
   margin: 2%;
+  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
 .partie-droite .competences .espacement-logo img {
-  width: 5%;
+  width: 70px;
   height: auto;
-  max-width: 70px;
+  max-width: 100%;
   max-height: 70px;
 }
 
 .partie-droite .competences .infobulle {
   position: absolute;
   top: 100%;
-  left: 70%;
+  left: 50%;
   transform: translateX(-50%);
   background-color: black;
   color: white;
@@ -276,7 +284,7 @@ body.theme-mode {
 
 .partie-droite .competences .espacement-logo:hover .infobulle {
   visibility: visible;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 #parcours {
@@ -319,6 +327,7 @@ body.theme-mode {
   justify-content: center;
   gap: 20px;
   line-height: 1.4;
+  font-size: 15px;
 }
 
 #parcours h2 {
