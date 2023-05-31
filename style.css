@@ -138,10 +138,6 @@ body.theme-mode {
   align-items: center;
 }
 
-.partie-droite .dernieres-infos {
-  flex: 1;
-}
-
 .partie-droite .prochaines-competences {
   flex: 1;
   display: flex;
@@ -205,6 +201,14 @@ body.theme-mode {
   background-color: #13191C;
 }
 
+.partie-gauche {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .partie-gauche img {
   flex: 1;
   width: 60%;
@@ -234,7 +238,7 @@ body.theme-mode {
 }
 
 .partie-droite p {
-  margin-bottom: %;
+  margin-bottom: 5%;
   line-height: 1.8;
 }
 
@@ -361,6 +365,7 @@ body.theme-mode {
   display: flex;
   transition: transform 0.5s ease;
   align-items: stretch;
+  align-items: flex-start;
 }
 
 .slide {
@@ -414,7 +419,6 @@ body.theme-mode {
   object-fit: cover;
 }
 
-
 #contact {
   color: #9EB0B0;
   background-color: #253136;
@@ -459,6 +463,8 @@ body.theme-mode {
 }
 
 .titre-contact {
+  border: 3px solid grey;
+  padding: 5px 8px;
   margin-bottom: 20px;
 }
 
